@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Access is Forbidden</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#ef4444; --muted:#9aa4b2; --glass:rgba(255,255,255,0.03);
+      --radius:14px; --max:760px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#071024 0%, #07182b 60%);color:#e6eef6;display:flex;align-items:center;justify-content:center;padding:24px;
+    }
+    .card{max-width:var(--max);width:100%;background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.6));border-radius:var(--radius);padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .header{display:flex;align-items:center;gap:18px}
+    .icon{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#111827,#0b1220);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)}
+    h1{margin:0;font-size:28px;letter-spacing:0.2px}
+    p.lead{color:var(--muted);margin:8px 0 18px}
+    .alert{background:linear-gradient(90deg, rgba(239,68,68,0.12), rgba(239,68,68,0.06));padding:14px;border-radius:10px;border:1px solid rgba(239,68,68,0.12);display:flex;gap:12px;align-items:flex-start}
+    .alert strong{display:block}
+    .actions{margin-top:18px;display:flex;gap:10px}
+    a.button{padding:10px 14px;border-radius:10px;background:#0b1220;border:1px solid rgba(255,255,255,0.04);text-decoration:none;color:#e6eef6;font-weight:600}
+    a.contact{color:#cbd5e1;text-decoration:underline}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    code.notice{display:block;margin-top:12px;padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);font-family:monospace;color:#ffdede}
+    @media (max-width:520px){.header{gap:12px}.icon{width:56px;height:56px}.card{padding:18px}}
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <div class="header">
+      <div class="icon" aria-hidden="true">
+        <!-- lock svg -->
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#ffdde0" opacity="0.95"/>
+          <rect x="4" y="10" width="16" height="10" rx="2" stroke="#ffdde0" stroke-width="0.8" fill="none" opacity="0.7"/>
+          <path d="M8 10V7a4 4 0 118 0v3" stroke="#ffdde0" stroke-width="0.9" fill="none" opacity="0.9"/>
+        </svg>
+      </div>
+      <div>
+        <h1 id="title">Access is Forbidden</h1>
+        <p class="lead">You do not have permission to view this resource.</p>
+      </div>
+    </div>
+
+    <div class="alert" role="alert" aria-live="polite">
+      <div aria-hidden="true">
+        <!-- warning icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L1 21h22L12 2z" stroke="#ef4444" stroke-width="1.1" fill="none" />
+          <path d="M12 8v5" stroke="#ef4444" stroke-width="1.2" stroke-linecap="round" />
+          <path d="M12 16h.01" stroke="#ef4444" stroke-width="1.2" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div>
+        <strong>Your access is being monitored.</strong>
+        <div class="muted">All activity on this device and account may be logged and reviewed. Do not attempt to repeat or bypass this notice — further attempts may result in access being blocked.</div>
+        <code class="notice">If you believe this is an error, please contact the website administrator immediately. Thank you for your coorperation</code>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
