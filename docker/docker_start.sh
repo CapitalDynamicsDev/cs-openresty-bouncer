@@ -38,5 +38,6 @@ done
 
 lower=$(echo "$IS_LUALIB_IMAGE" | tr '[:upper:]' '[:lower:]')
 if [ "$lower" != "true" ]; then
+    exec /usr/local/bin/nginx-ui -config /etc/nginx/conf.d/app.ini &
     exec /usr/local/openresty/bin/openresty -g "daemon off;"
 fi
